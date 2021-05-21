@@ -1,0 +1,11 @@
+<selectize></selectize>
+<div class="container elems">
+  <div *ngFor="let item of items$ | filter: filterText">
+    <blog-item
+      [id]="item.id"
+      [image]="item.image"
+      [text]="item.text"
+      [title]="item.title">
+    </blog-item>
+  </div>
+</div>
